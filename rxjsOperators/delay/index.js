@@ -7,6 +7,7 @@ Rx.Observable.of(42)
     .delay(2000)
     .subscribe(x => console.log(x));
 
+    
 console.log("STARTING SECOND SEQUENCE")
 Rx.Observable.range(1, 9)
     .delayWhen(x => Rx.Observable.timer(x * 1000))
